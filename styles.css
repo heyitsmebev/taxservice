@@ -174,3 +174,24 @@ body {
   background-color: #0e5f6b;
   color: #fff;
 }
+
+/* Style the language toggle button */
+.lang-toggle {
+  background-color: #0e5f6b;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background-color: #0c4f5a;
+}
+
+/* Add smooth transition when switching languages */
+.lang {
+  transition: opacity 0.3s ease-in-out;
+}
