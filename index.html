@@ -2,30 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ProTax Prep – Your Trusted Tax Professionals</title>
+  <title>Nguyen Tax Pro – Maximizing Your Refund, Minimizing Your Stress</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- HEADER -->
   <header class="site-header">
-    <div class="logo">ProTax Prep</div>
+    <div class="logo">Nguyen Tax Pro</div>
     <nav class="main-nav">
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#why-us">Why Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#special-offers">Special Offers</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="lang-toggle" onclick="toggleLanguage()"> English | Tiếng Việt</button>
+          </li>
+        </ul>
+      </nav>
   </header>
 
   <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-text">
-      <h1>Professional Tax Preparation</h1>
-      <p>Maximize your refund. Minimize your stress.</p>
-      <a href="#contact" class="btn">Get Started</a>
+      <h1>
+        <span class="lang en">Expert Tax Services for Individuals, Families & Businesses</span>
+        <span class="lang vi" style="display: none;">Dịch vụ thuế chuyên nghiệp cho cá nhân, gia đình và doanh nghiệp</span>
+      </h1>
+      <p>
+        <span class="lang en">Maximize your deductions. Keep more of your hard-earned money.</span>
+        <span class="lang vi" style="display: none;">Tối đa hóa các khoản khấu trừ. Giữ lại nhiều tiền hơn.</span>
+      </p>
+      <a href="#contact" class="btn">
+        <span class="lang en">Get Started</span>
+        <span class="lang vi" style="display: none;">Bắt đầu ngay</span>
+      </a>
     </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about-us" class="section">
+    <h2>About Nguyen Tax Pro</h2>
+    <p>Nguyen Tax Pro is a **family-run business** dedicated to helping individuals, families, and businesses **thrive**. We specialize in serving the **Asian community**, offering services in both **Vietnamese and English**, so you can feel confident and understood when filing your taxes.</p>
+    <p>Unlike TurboTax or H&R Block, our **personalized approach ensures you maximize every deduction and tax credit available**. Our clients **consistently see higher refunds and bigger tax savings** than they would using self-service software.</p>
+    <p>With years of experience and a commitment to your financial success, we make tax filing **stress-free, transparent, and efficient**.</p>
   </section>
 
   <!-- SERVICES SECTION -->
@@ -34,34 +55,56 @@
     <div class="cards">
       <div class="card">
         <h3>Personal Tax Filing</h3>
-        <p>We handle your federal and state returns seamlessly, making sure you keep more of what you earn.</p>
+        <p>We handle your federal and state returns with precision, ensuring you keep more of what you earn.</p>
       </div>
       <div class="card">
-        <h3>Small Business Support</h3>
-        <p>Freelancer, LLC, or partnership—we specialize in deductions that help your business thrive.</p>
+        <h3>Small Business & Self-Employed Taxes</h3>
+        <p>We specialize in deductions for LLCs, freelancers, and entrepreneurs to help your business grow.</p>
       </div>
       <div class="card">
         <h3>Tax Planning & Consulting</h3>
-        <p>Strategize for the future and reduce surprises. We’ll guide you all year long, not just at tax time.</p>
+        <p>Get ahead of tax season with strategic planning to maximize savings and avoid surprises.</p>
       </div>
     </div>
   </section>
 
   <!-- WHY US SECTION -->
   <section id="why-us" class="section alt-section">
-    <h2>Why Choose ProTax Prep?</h2>
+    <h2>Why Choose Nguyen Tax Pro?</h2>
     <ul class="benefits-list">
-      <li>Expert Guidance: Our professionals stay updated on the latest tax laws.</li>
-      <li>Family & Small Business Focus: We tailor our services to what matters most to you.</li>
-      <li>Transparent Pricing: No hidden fees or last-minute surprises.</li>
-      <li>Year-Round Support: We’re here whenever you need us, not just in April.</li>
+      <li>**More Savings** – Clients save more with us than with TurboTax or H&R Block.</li>
+      <li>**Personalized Service** – We take the time to find every deduction and credit.</li>
+      <li>**Bilingual Support** – We speak Vietnamese and English to better serve our community.</li>
+      <li>**Family-Owned & Trusted** – We treat every client like family.</li>
+      <li>**Year-Round Assistance** – Taxes aren’t just a once-a-year task, and we’re here whenever you need us.</li>
     </ul>
+  </section>
+
+  <!-- SPECIAL OFFERS SECTION -->
+  <section id="special-offers" class="section">
+    <h2>Special Offers</h2>
+    <div class="offer-box">
+      <h3>🎉 New Client Special – $50 Off Your First Tax Filing!</h3>
+      <p>For a limited time, new clients get **$50 off** their first tax preparation service.</p>
+      <p>Book your consultation today to lock in your savings!</p>
+    </div>
+    <div class="offer-box">
+      <h3>🤝 Referral Bonus – Earn $25 for Every Friend You Refer!</h3>
+      <p>Love our service? Tell your friends! For each person you refer who files with us, you’ll receive **$25 off** your next service.</p>
+      <p>There’s no limit—refer multiple people and keep earning!</p>
+    </div>
   </section>
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>Ready to file or have questions? Reach out for a free consultation.</p>
+    <h2>
+        <span class="lang en">Contact Us</span>
+        <span class="lang vi" style="display: none;">Liên hệ với chúng tôi</span>
+      </h2>
+      <p>
+        <span class="lang en">Ready to file or have questions? Reach out for a free consultation.</span>
+        <span class="lang vi" style="display: none;">Sẵn sàng khai thuế hoặc có câu hỏi? Liên hệ với chúng tôi để được tư vấn miễn phí.</span>
+      </p>
     <form class="contact-form">
       <label for="name">Name</label>
       <input type="text" id="name" placeholder="Your name...">
@@ -78,8 +121,18 @@
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <p>&copy; 2025 ProTax Prep. All rights reserved.</p>
+    <p>&copy; 2025 Nguyen Tax Pro. All rights reserved.</p>
   </footer>
+
+  <script>
+    function toggleLanguage() {
+      const elementsEn = document.querySelectorAll(".lang.en");
+      const elementsVi = document.querySelectorAll(".lang.vi");
+      
+      elementsEn.forEach(el => el.style.display = el.style.display === "none" ? "inline" : "none");
+      elementsVi.forEach(el => el.style.display = el.style.display === "none" ? "inline" : "none");
+    }
+  </script>
 
 </body>
 </html>
