@@ -13,11 +13,18 @@ body {
 }
 
 /* ---- HEADER & NAV ---- */
+.navbar,
+footer.bg-dark,
+.site-header {
+  background-color: #297479;
+  color: #fff;
+  transition: background 0.3s ease-in-out;
+}
+
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0e5f6b;
   padding: 1em 2em;
 }
 
@@ -45,7 +52,7 @@ body {
 
 /* ---- HERO SECTION ---- */
 .hero {
-  background: url("https://via.placeholder.com/1600x800/0e5f6b/fff?text=ProTax+Prep+Hero") center/cover no-repeat;
+  background: url("/images/hero.png") center/cover no-repeat;
   min-height: 50vh;
   display: flex;
   align-items: center;
@@ -54,23 +61,19 @@ body {
 }
 
 .hero-text {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(41, 116, 121, 0.85);
   padding: 2em;
   max-width: 500px;
+  border-radius: 0.5em;
+  color: #fff;
 }
 
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-  color: #0e5f6b;
+.hero-text h1,
+.hero-text p {
+  color: #fff;
 }
 
-.hero p {
-  margin-bottom: 1em;
-  color: #444;
-}
-
-/* ---- BUTTON ---- */
+/* ---- BUTTONS ---- */
 .btn {
   background-color: #0e5f6b;
   color: #fff;
@@ -87,95 +90,165 @@ body {
   background-color: #0c545f;
 }
 
-/* ---- SECTIONS ---- */
-.section {
-  padding: 3em 2em;
+.btn-accent {
+  background-color: #e3c327;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #b8811f;
+}
+
+.btn-outline-accent {
+  border: 2px solid #e3c327;
+  color: #e3c327;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.btn-outline-accent:hover {
+  background-color: #e3c327;
+  color: #fff;
+}
+
+.btn-outline-light {
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-outline-light:hover {
   background-color: #fff;
+  color: #297479;
 }
 
-.alt-section {
-  background-color: #eee;
-}
-
+/* ---- SECTION HEADINGS ---- */
+.section-heading,
 .section h2 {
   font-size: 2em;
   margin-bottom: 1em;
   text-align: center;
+  color: #297479;
 }
 
-/* ---- CARDS ---- */
-.cards {
-  display: flex;
-  gap: 2em;
-  flex-wrap: wrap;
-  justify-content: center;
+/* ---- SERVICES SECTION ---- */
+.services-section {
+  background-color: #297479;
 }
 
-.card {
-  background-color: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.service-box {
+  border: 2px solid #0c545f; /* dark teal border */
   padding: 1.5em;
-  width: 280px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.card h3 {
-  margin-bottom: 1em;
-  color: #0e5f6b;
+.text-accent {
+  color: #e3c327;
 }
 
-.card p {
-  margin-bottom: 1em;
-}
-
-/* ---- BENEFITS LIST ---- */
-.benefits-list {
-  list-style: none;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.8;
-}
-
-.benefits-list li {
-  margin-bottom: 0.5em;
-  font-size: 1.1em;
-}
-
-/* ---- CONTACT FORM ---- */
-.contact-form {
+/* ---- ABOUT IMAGE ---- */
+.image-crop {
+  width: 100%;
   max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
-.contact-form label {
-  margin: 0.5em 0 0.2em;
+.image-crop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---- CONTACT CARD ---- */
+
+.contact-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: inherit;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card .btn {
   font-weight: bold;
+  border-radius: 0; /* for a flush edge where the divider is */
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 0.75em;
-  margin-bottom: 1em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+/* Accent Buttons */
+.btn-accent {
+  background-color: #e3c327;
+  color: #fff;
+  border: none;
 }
 
-.contact-form button {
-  align-self: flex-start;
+.btn-accent:hover {
+  background-color: #b8811f;
 }
 
-/* ---- FOOTER ---- */
-.site-footer {
-  text-align: center;
-  padding: 1em;
-  background-color: #0e5f6b;
+.btn-outline-accent {
+  border: 2px solid #e3c327;
+  color: #e3c327;
+  background-color: transparent;
+}
+
+.btn-outline-accent:hover {
+  background-color: #e3c327;
   color: #fff;
 }
 
-/* Style the language toggle button */
+/* Divider between buttons */
+.border-end {
+  border-right: 1px solid #ccc !important;
+}
+
+
+/* ---- OFFERS ---- */
+.offer-box {
+  background-color: #297479;
+  color: #fff;
+  border: none;
+  padding: 1.5em;
+  border-radius: 8px;
+  margin: 1em auto;
+  max-width: 600px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ---- TESTIMONIALS ---- */
+.testimonial-box {
+  max-width: 600px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: flex !important;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* ---- LANGUAGE TOGGLE ---- */
 .lang-toggle {
   background-color: #0e5f6b;
   color: #fff;
@@ -191,7 +264,14 @@ body {
   background-color: #0c4f5a;
 }
 
-/* Add smooth transition when switching languages */
 .lang {
   transition: opacity 0.3s ease-in-out;
+}
+
+/* ---- FOOTER ---- */
+.site-footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #297479;
+  color: #fff;
 }
